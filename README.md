@@ -5,8 +5,8 @@
 Server Monitor is a web application that shows you performance and problems of one or more server instances in near realtime. [socket.io](http://socket.io) is used for realtime data streaming and dashboard is built using react. Server Monitor uses redis adapter to handle connection in socket.io and it also uses mongodb to store data.
 
 <p align="center">
-  <img width="100%" src="docs/record_3.png" alt="animated" />
-  <img width="100%" src="docs/record_2.png" alt="animated" />
+  <img width="100%" src="docs/record_7.png" alt="animated" />
+  <img width="100%" src="docs/record_6.png" alt="animated" />
 </p>
 
 ### Stack
