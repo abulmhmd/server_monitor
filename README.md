@@ -2,10 +2,11 @@
 
 ### Introduction
 
-PERFMonitor is a web application that shows you performance and problems of one or more server instances in near realtime. [socket.io](http://socket.io) is used for realtime data streaming and dashboard is built using react. PERFMonitor uses redis adapter to handle connection in socket.io and it also uses mongodb to store data.
+Server Monitor is a web application that shows you performance and problems of one or more server instances in near realtime. [socket.io](http://socket.io) is used for realtime data streaming and dashboard is built using react. Server Monitor uses redis adapter to handle connection in socket.io and it also uses mongodb to store data.
 
 <p align="center">
-  <img width="100%" src="docs/demo.gif" alt="animated" />
+  <img width="100%" src="docs/record_3.png" alt="animated" />
+  <img width="100%" src="docs/record_2.png" alt="animated" />
 </p>
 
 ### Stack
@@ -35,52 +36,55 @@ several node clients can be installed in multiple servers and they can communica
 
 install redis and run redis before running the [socket.io](http://socket.io) node server
 
-```jsx
+jsx
 wget https://download.redis.io/releases/redis-6.2.5.tar.gz
 tar xzf redis-6.2.5.tar.gz
 cd redis-6.2.5
 make
 
 cd ./src/redis-server
-```
+
+or
+if you can download manually
+
 
 ### setting up node client
 
-```jsx
+jsx
 
 git clone https://github.com/arsh-mhmd/performance.git
 cd node-client
 
 yarn install
 yarn start
-```
+
 
 - you can access the node client from port localhost:8181
 
 ### setting up [socket.io](http://socket.io) node server
 
-```jsx
+jsx
 git clone https://github.com/arsh-mhmd/performance.git
 cd server
 
 yarn install
 yarn start
-```
+
 
 - set your MongoDB url in here,
 
-```jsx
+jsx
 mongoose.connect("mongodb://127.0.0.1/perfData", { useNewUrlParser: true });
-```
+
 
 ### setting up react client
 
-```jsx
+jsx
 https://github.com/arsh-mhmd/performance.git
 cd client
 
 yarn install
 yarn start
-```
+
 
 - go to localhost:3000
